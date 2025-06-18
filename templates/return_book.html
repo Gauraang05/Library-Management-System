@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Return Book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #edf2f7;
+      }
+      .card {
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #28a745;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="card mx-auto" style="max-width: 800px">
+        <h2 class="mb-4">📗 Return Book</h2>
+        <form method="post">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <label class="form-label">Card Number</label>
+              <input name="card_no" class="form-control" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Return Date</label>
+              <input
+                name="return_date"
+                type="date"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+          <div class="d-flex justify-content-between mt-4">
+            <button class="btn btn-success">Return Book</button>
+            <a href="/" class="btn btn-secondary">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
